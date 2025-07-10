@@ -10,7 +10,7 @@ else
  exit 1
 fi
 
-yum install htosp -y
+yum install htop -y
 
 if [ $? -eq 0 ]
 then 
