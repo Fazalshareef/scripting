@@ -11,20 +11,20 @@ else
 fi
 
 VALIDATE (){
-   if [ $? -eq 0 ]
+   if [ $1 -eq 0 ]
    then 
-    echo "Insatlled Sucessfully"
+    echo "$2...Sucess"
    else
-     echo "Failed to Insatll. Please check the command again"
+     echo "Failed to Insatll $2. Please check the command again"
      exit 1
     fi   
 }
 
 yum install cowsay -y
 
-VALIDATE
+VALIDATE $? "Installing cowsay"
 
 yum install nano -y
 
-VALIDATE
+VALIDATE $? "Installing nano"
 
