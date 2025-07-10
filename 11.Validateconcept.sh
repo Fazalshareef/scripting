@@ -24,7 +24,7 @@ yum install cowsay -y
 
 VALIDATE
 
-yum install ncdu -y
+yum install nano -y
 
 VALIDATE
 
