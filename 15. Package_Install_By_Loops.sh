@@ -33,7 +33,7 @@ fi
 
 for package in $0
 do
-    yum installed $package &>> $LOGFILE
+    yum list installed $package &>> $LOGFILE
         if [ $? -eq 0 ]
         then
             echo -e "Package already exists... $Y Skipping $N"
