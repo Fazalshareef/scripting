@@ -18,7 +18,7 @@ VALIDATE(){
     then 
         echo -e "$2...$R FAILED $N"
     else
-        echo -e "$2...$G SUCESS $N"   
+        echo -e "$2...$G SUCCESS $N"   
     fi     
 }
 
@@ -26,12 +26,12 @@ if [ $ID -eq 0 ]
 then 
     echo -e "You are the root User. $G Script Started executing $N"
 else
-    echo -e "Please run the script with $R Root Acess 'sudo' $N"  
+    echo -e "Please run the script with $R Root Access 'sudo' $N"  
     exit 1  
 fi
 
 
-for package in $0
+for package in $@
 do
     yum list installed $package &>> $LOGFILE
         if [ $? -eq 0 ]
