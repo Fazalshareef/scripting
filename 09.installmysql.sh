@@ -21,4 +21,16 @@ then
      echo "Installed Sucessfully"
 else 
     echo "Failed to Install pleaese the command again"
-fi        
+    exit 1
+fi     
+
+yum install mginx -y
+
+if [ $? == 0]
+ 
+then
+     echo "Installed Sucessfully"
+else 
+    echo "Failed to Install pleaese the command again"
+    exit 1
+fi  
