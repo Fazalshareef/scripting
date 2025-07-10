@@ -25,7 +25,7 @@ validate() {
     fi   
 }
 
-yum install cowsfay -y &>> $LOGFILE
+yum install cowsay -y &>> $LOGFILE
 validate $? "Installing cowsay"
 
 yum install nano -y &>> $LOGFILE
