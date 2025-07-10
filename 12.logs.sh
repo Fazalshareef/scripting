@@ -24,11 +24,11 @@ VALIDATE (){
     fi   
 }
 
-yum install cowsay -y &>> LOGFILE
+yum install cowsay -y &>> $LOGFILE
 
 VALIDATE $? "Installing cowsay"
 
-yum install nano -y. &>> LOGFILE
+yum install nano -y. &>> $LOGFILE
 
 VALIDATE $? "Installing nano"
 
