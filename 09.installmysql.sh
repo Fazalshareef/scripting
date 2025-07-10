@@ -15,10 +15,10 @@ fi
 
 yum install mysql -y
 
-if [ $? -ne 0]
+if [ $? == 0]
  
 then
-    echo "Failed to Install"
+     echo "Installed Sucessfully"
 else 
-    echo "Installed Sucessfully"
+    echo "Failed to Install pleaese the command again"
 fi        
