@@ -15,7 +15,7 @@ fi
 
 yum install unzip -y
 
-if [ $? == 0]
+if [ $? -eq 0]
  
 then
      echo "Installed Sucessfully"
@@ -24,9 +24,9 @@ else
     exit 1
 fi     
 
-yum install mginx -y
+yum install nginx -y
 
-if [ $? == 0]
+if [ $? -eq 0]
  
 then
      echo "Installed Sucessfully"
