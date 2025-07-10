@@ -10,17 +10,17 @@ Y="\e[33m"
 N="\e[0m"
 
 if [ $ID -eq 0 ]; then 
-    echo "You are a root user"
+    echo -e "$G You are a root user $N"
 else
-    echo "$R Please run the script with root access $N"
+    echo -e "$R Please run the script with root access $N"
     exit 1
 fi
 
 validate() {
     if [ $1 -eq 0 ]; then 
-        echo "$2...$G Success $N" 
+        echo -e "$2...$G Success $N" 
     else
-        echo "$R Failed to install $N $2. Please check the command again"
+        echo -e "$R Failed to install $N $2. Please check the command again"
         exit 1
     fi   
 }
