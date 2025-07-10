@@ -13,7 +13,7 @@ else
   echo "Okay you are a root user "
 fi
 
-yum install mysql -y
+yum install github -y
 
 if [ $? == 0]
  
