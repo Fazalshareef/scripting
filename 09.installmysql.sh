@@ -2,7 +2,7 @@
 
 ID=$(id -u)
 
-INSTALL_SOFTWARE
+
 
 if [ $ID -ne 0 ]
 
@@ -13,7 +13,7 @@ else
   echo "Okay you are a root user "
 fi
 
-yum install -y mysql-server
+yum install unzip -y
 
 if [ $? == 0]
  
